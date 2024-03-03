@@ -7,11 +7,13 @@ client.on("connect", function () {
 
 function pub_callback() {
   console.log("已提交给服务器!");
-  // 重定向页面， 定时器
-  alert("提交中...");
   setTimeout(function () {
-    window.location.href = "/success.html";
+    alert("提交中...");
+    window.location.href = "/guessNumber/success.html";
   }, 100);
+  // 重定向页面， 定时器
+  
+  
 }
 
 function pub(message) {
