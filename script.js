@@ -8,12 +8,10 @@ client.on("connect", function () {
 function pub_callback() {
   console.log("已提交给服务器!");
   setTimeout(function () {
-    alert("提交中...");
+    alert("提交成功");
     window.location.href = "/guessNumber/success.html";
-  }, 100);
+  }, 500);
   // 重定向页面， 定时器
-  
-  
 }
 
 function pub(message) {
